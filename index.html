@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document </title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="overlay" id="overlay">
+        <h3> Searching now ... </h3>
+    </div>
+    <div class="hero-bg">
+        <section class="top">
+            <header>
+                <a href="#">Yummy.eats</a>
+            </header>
+
+            <h1><span>The Healthy</span> Eating  Experience </h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quidem distinctio cupiditate incidunt temporibus magni officia, dolor soluta magnam nulla!</p>
+
+            <div class="form-container">
+                <form action="">
+                    <div class="form-left">
+                        <label for="city">Enter your city :</label>
+                        <input type="text" name="city" id="city">
+                        <p> Example: "San Diego" </p>
+                    </div>
+
+                    <input type="button" value="Find Food Now" id="cta-btn"
+                </form>
+            </div>
+        </section>
+    </div >
+
+    <section class="authentic">
+            <div class="right-col">
+                <h2> <span> Authentic</span>. Awesome.</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quas recusandae explicabo rem dolor consectetur, omnis tempora aut quos cumque!</p>
+            </div>
+            <img src="images/food-3.jpg" alt="Picture of food in a bowl">
+    </section>
+    <footer class="footer-container" >
+        
+            
+                <a href="#"> 
+                    <img  src="images/logo.svg" alt="Logo zeroFiltre">
+                </a>
+                <p >Champs Elysée ,Rue Wall Street Parish/France <br>2020 © Copyright Zerofiltre , Tous droits réservés. </p>  
+        
+    </footer>
+
+    <script>
+
+        let btn = document.getElementById('cta-btn');
+        let overlay = document.getElementById('overlay');
+
+        btn.addEventListener('click', () => {
+            overlay.style.display = 'grid';
+            overlay.classList.add('animate-overlay')
+        })
+    </script>
+</body>
+</html>
